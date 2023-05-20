@@ -21,6 +21,10 @@
     display: inline-block;
 }
 
+.logo li a {
+    font-size: 24px;
+}
+
 .welcome {
     margin-left: 5%;
     position: absolute;
