@@ -1,0 +1,580 @@
+<html __fvdsurfcanyoninserted="1"
+    class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mutlu Yıllar Ortak!</title>
+    <style>
+        /* If you can't see it just hit space in here*/
+        body {
+            font-family: 'Wendy One', sans-serif;
+            overflow-y: scroll;
+            /* Yalnızca y ekseninde kaydırma */
+            -ms-overflow-style: none;
+            /* IE ve Edge tarayıcıları için kaydırma çubuğunu gizleme */
+            scrollbar-width: none;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari ve Opera tarayıcıları için kaydırma çubuğunu gizleme */
+        }
+
+        body {
+            background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
+            background-image: -webkit-radial-gradient(#374566, #010203);
+            background-image: -moz-radial-gradient(#374566, #010203);
+            background-image: -o-radial-gradient(#374566, #010203);
+            background-image: radial-gradient(#374566, #010203);
+        }
+
+        span {
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 800px;
+            height: 420px;
+            padding: 10px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .balloon {
+            width: 738px;
+            margin: 0 auto;
+            padding-top: 30px;
+            position: relative;
+        }
+
+        .balloon>div {
+            width: 104px;
+            height: 140px;
+            background: rgba(182, 15, 97, 0.9);
+            border-radius: 0;
+            border-radius: 80% 80% 80% 80%;
+            margin: 0 auto;
+            position: absolute;
+            padding: 10px;
+            box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
+            -webkit-transform-origin: bottom center;
+        }
+
+        .balloon>div:nth-child(1) {
+            background: rgba(182, 15, 97, 0.9);
+            left: 0;
+            box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+            -webkit-animation: balloon1 6s ease-in-out infinite;
+            -moz-animation: balloon1 6s ease-in-out infinite;
+            -o-animation: balloon1 6s ease-in-out infinite;
+            animation: balloon1 6s ease-in-out infinite;
+        }
+
+        .balloon>div:nth-child(1):before {
+            color: rgba(182, 15, 97, 0.9);
+        }
+
+        .balloon>div:nth-child(2) {
+            background: rgba(242, 112, 45, 0.9);
+            left: 120px;
+            box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+            -webkit-animation: balloon2 6s ease-in-out infinite;
+            -moz-animation: balloon2 6s ease-in-out infinite;
+            -o-animation: balloon2 6s ease-in-out infinite;
+            animation: balloon2 6s ease-in-out infinite;
+        }
+
+        .balloon>div:nth-child(2):before {
+            color: rgba(242, 112, 45, 0.9);
+        }
+
+        .balloon>div:nth-child(3) {
+            background: rgba(45, 181, 167, 0.9);
+            left: 240px;
+            box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
+            -webkit-animation: balloon4 6s ease-in-out infinite;
+            -moz-animation: balloon4 6s ease-in-out infinite;
+            -o-animation: balloon4 6s ease-in-out infinite;
+            animation: balloon4 6s ease-in-out infinite;
+        }
+
+        .balloon>div:nth-child(3):before {
+            color: rgba(45, 181, 167, 0.9);
+        }
+
+        .balloon>div:nth-child(4) {
+            background: rgba(190, 61, 244, 0.9);
+            left: 360px;
+            box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+            -webkit-animation: balloon1 5s ease-in-out infinite;
+            -moz-animation: balloon1 5s ease-in-out infinite;
+            -o-animation: balloon1 5s ease-in-out infinite;
+            animation: balloon1 5s ease-in-out infinite;
+        }
+
+        .balloon>div:nth-child(4):before {
+            color: rgba(190, 61, 244, 0.9);
+        }
+
+        .balloon>div:nth-child(5) {
+            background: rgba(180, 224, 67, 0.9);
+            left: 480px;
+            box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+            -webkit-animation: balloon3 5s ease-in-out infinite;
+            -moz-animation: balloon3 5s ease-in-out infinite;
+            -o-animation: balloon3 5s ease-in-out infinite;
+            animation: balloon3 5s ease-in-out infinite;
+        }
+
+        .balloon>div:nth-child(5):before {
+            color: rgba(180, 224, 67, 0.9);
+        }
+
+        .balloon>div:nth-child(6) {
+            background: rgba(242, 194, 58, 0.9);
+            left: 600px;
+            box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+            -webkit-animation: balloon2 3s ease-in-out infinite;
+            -moz-animation: balloon2 3s ease-in-out infinite;
+            -o-animation: balloon2 3s ease-in-out infinite;
+            animation: balloon2 3s ease-in-out infinite;
+        }
+
+        .balloon>div:nth-child(6):before {
+            color: rgba(242, 194, 58, 0.9);
+        }
+
+        .balloon>div:before {
+            color: rgba(182, 15, 97, 0.9);
+            position: absolute;
+            bottom: -11px;
+            left: 52px;
+            content: "▲";
+            font-size: 1em;
+        }
+
+        span {
+            font-size: 4.8em;
+            color: white;
+            position: relative;
+            top: 30px;
+            left: 50%;
+            margin-left: -27px;
+        }
+
+        /*BALLOON 1 4*/
+        @-webkit-keyframes balloon1 {
+
+            0%,
+            100% {
+                -webkit-transform: translateY(0) rotate(-6deg);
+            }
+
+            50% {
+                -webkit-transform: translateY(-20px) rotate(8deg);
+            }
+        }
+
+        @-moz-keyframes balloon1 {
+
+            0%,
+            100% {
+                -moz-transform: translateY(0) rotate(-6deg);
+            }
+
+            50% {
+                -moz-transform: translateY(-20px) rotate(8deg);
+            }
+        }
+
+        @-o-keyframes balloon1 {
+
+            0%,
+            100% {
+                -o-transform: translateY(0) rotate(-6deg);
+            }
+
+            50% {
+                -o-transform: translateY(-20px) rotate(8deg);
+            }
+        }
+
+        @keyframes balloon1 {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(-6deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(8deg);
+            }
+        }
+
+        /* BAllOON 2 5*/
+        @-webkit-keyframes balloon2 {
+
+            0%,
+            100% {
+                -webkit-transform: translateY(0) rotate(6eg);
+            }
+
+            50% {
+                -webkit-transform: translateY(-30px) rotate(-8deg);
+            }
+        }
+
+        @-moz-keyframes balloon2 {
+
+            0%,
+            100% {
+                -moz-transform: translateY(0) rotate(6deg);
+            }
+
+            50% {
+                -moz-transform: translateY(-30px) rotate(-8deg);
+            }
+        }
+
+        @-o-keyframes balloon2 {
+
+            0%,
+            100% {
+                -o-transform: translateY(0) rotate(6deg);
+            }
+
+            50% {
+                -o-transform: translateY(-30px) rotate(-8deg);
+            }
+        }
+
+        @keyframes balloon2 {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(6deg);
+            }
+
+            50% {
+                transform: translateY(-30px) rotate(-8deg);
+            }
+        }
+
+        /* BAllOON 0*/
+        @-webkit-keyframes balloon3 {
+
+            0%,
+            100% {
+                -webkit-transform: translate(0, -10px) rotate(6eg);
+            }
+
+            50% {
+                -webkit-transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+
+        @-moz-keyframes balloon3 {
+
+            0%,
+            100% {
+                -moz-transform: translate(0, -10px) rotate(6eg);
+            }
+
+            50% {
+                -moz-transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+
+        @-o-keyframes balloon3 {
+
+            0%,
+            100% {
+                -o-transform: translate(0, -10px) rotate(6eg);
+            }
+
+            50% {
+                -o-transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+
+        @keyframes balloon3 {
+
+            0%,
+            100% {
+                transform: translate(0, -10px) rotate(6eg);
+            }
+
+            50% {
+                transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+
+        /* BAllOON 3*/
+        @-webkit-keyframes balloon4 {
+
+            0%,
+            100% {
+                -webkit-transform: translate(10px, -10px) rotate(-8eg);
+            }
+
+            50% {
+                -webkit-transform: translate(-15px, 20px) rotate(10deg);
+            }
+        }
+
+        @-moz-keyframes balloon4 {
+
+            0%,
+            100% {
+                -moz-transform: translate(10px, -10px) rotate(-8eg);
+            }
+
+            50% {
+                -moz-transform: translate(-15px, 10px) rotate(10deg);
+            }
+        }
+
+        @-o-keyframes balloon4 {
+
+            0%,
+            100% {
+                -o-transform: translate(10px, -10px) rotate(-8eg);
+            }
+
+            50% {
+                -o-transform: translate(-15px, 10px) rotate(10deg);
+            }
+        }
+
+        @keyframes balloon4 {
+
+            0%,
+            100% {
+                transform: translate(10px, -10px) rotate(-8eg);
+            }
+
+            50% {
+                transform: translate(-15px, 10px) rotate(10deg);
+            }
+        }
+
+        h1 {
+            position: relative;
+            top: 200px;
+            text-align: center;
+            color: white;
+            font-size: 3.5em;
+        }
+    </style>
+    <script>
+        window.open = function () { };
+        window.print = function () { };
+        // Support hover state for mobile.
+        if (false) {
+            window.ontouchstart = function () { };
+        }
+    </script>
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <meta content="clickberry-extension-here">
+    <meta content="clickberry-extension-here">
+    <style type="text/css"></style>
+    <style type="text/css"></style>
+    <style type="text/css"></style>
+    <style type="text/css"></style>
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <meta content="clickberry-extension-here">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="audio/Arkaplan.mp3">
+
+    <link rel="icon" type="image/png" href="img/18.jpeg">
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
+    <div class="container">   
+        <div class="balloon">
+            <div><span>☺</span>
+            </div>
+            <div><span>o</span>
+            </div>
+            <div><span>r</span>
+            </div>
+            <div><span>t</span>
+            </div>
+            <div><span>a</span>
+            </div>
+            <div><span>k</span>
+            </div>
+        </div>
+        <h1 id="countdown"></h1> 
+        <h1 class="bday">İyi ki doğdun Ebrar</h1>
+
+    </div>
+
+    <div class="description">
+        <p>Böyle uzun uzun sevgi pıtırcığı mesajlar yazmakta çok iyi değilim, dünya barışını öven metinler yaz desen
+            kralını yazarım ama iş böyle şeylere gelince bi tık beceremiyorum. Doğum gününü bu sefer kendi tarzımda
+            kutlamak istedim! eheheh... Çok uzun süredir arkadaşız, yeri geldi üzüntün üzüntüm oldu, mutluluğun
+            mutluluğum.. Ve zaman zaman yeri geldi saçma sebeplerden dolayı bayaa tartıştık ama
+            yine de önemli olan hala seni yakın bir arkadaşım olarak görüyor olmam. Doğum günün kutlu olsun umarım
+            bundan sonraki yaşlarında çok verimli yıllar, hedeflerinin, arzularının gerçekleştiği dönemler geçirirsin.
+            Sevdiklerinle nice mutlu yıllara!<br><br><br><br> Aşağı kaydır daha bitmedi..<br><br> &#129155;
+        </p>
+    </div>
+
+    <p class="img-msg">Bir kaç tane de resim koydum ( Resimlerin her birinde ufak notlar var... )</p>
+    <div class="images">
+        <div class="kutu">
+            <img src="img/1.jpeg" alt="">
+            <div class="not">Para Bizde Şöhret Bizde
+                Sizde Ne Var Haydi Söyle
+                Hayat Bizde Her Şey Bizde
+                Sizde Ne Var Haydi Söyle</div>
+        </div>
+        <div class="kutu">
+            <img src="img/2.jpeg" alt="">
+            <div class="not">Benim en sevdiğim resim üçlüsünden birincisi</div>
+        </div>
+        <div class="kutu">
+            <img src="img/3.jpeg" alt="">
+            <div class="not">Benim en sevdiğim resim üçlüsünden ikincisi</div>
+        </div>
+        <div class="kutu">
+            <img src="img/4.jpeg" alt="">
+            <div class="not">Benim en sevdiğim resim üçlüsünden sonuncsusu <br><br>(Sonunda kadraja girebildin.. :D)
+            </div>
+        </div>
+        <div class="kutu">
+            <img src="img/5.jpeg" alt="">
+            <div class="not">Bizim karizma çok can sıkmaya başladı</div>
+        </div>
+        <div class="kutu">
+            <img src="img/6.jpeg" alt="">
+            <div class="not">Bir de pandemi vardı di mi...</div>
+        </div>
+        <div class="kutu">
+            <img src="img/7.jpeg" alt="">
+            <div class="not">Yanıyosun fuat abi</div>
+        </div>
+        <div class="kutu">
+            <img src="img/8.jpeg" alt="">
+            <div class="not">iyi sırıtmışız iyi :D</div>
+        </div>
+        <div class="kutu">
+            <img src="img/9.jpeg" alt="">
+            <div class="not">101 günlükleri</div>
+        </div>
+        <div class="kutu">
+            <img src="img/10.jpeg" alt="">
+            <div class="not">Discord hasbihalleri #1</div>
+        </div>
+    </div>
+    <p class="img-msg" style="color:white"><br><br>&#129155;</p>
+
+    <p class="img-msg">Bu sayfanın tuzu eksik olmuş, biraz ekleyelim...</p>
+    <div class="images">
+
+        <div class="kutu">
+            <img src="img/12.jpeg" alt="">
+            <div class="not">1</div>  
+        </div>
+        <div class="kutu">
+            <img src="img/14.jpeg" alt="">
+            <div class="not">2</div>  
+        </div>
+        <div class="kutu">
+            <img src="img/15.jpeg" alt="">
+            <div class="not">3</div>  
+        </div>
+        <div class="kutu">
+            <img src="img/18.jpeg" alt="">
+            <div class="not">4</div>  
+        </div>
+        <div class="kutu">
+            <img src="img/17.jpeg" alt="">
+            <div class="not">5</div>  
+        </div>
+        <div class="kutu">
+            <img src="img/19.jpeg" alt="">
+            <div class="not">6</div>  
+        </div>
+        <div class="kutu">
+            <img src="img/24.jpeg" alt="">
+            <div class="not">7</div>  
+        </div>
+        <div class="kutu">
+            <img src="img/21.jpeg" alt="">
+            <div class="not">8</div>  
+        </div>
+        <div class="kutu">
+            <img src="img/22.jpeg" alt="">
+            <div class="not">9</div>  
+        </div>
+        <div class="kutu">
+            <img src="img/23.jpeg" alt="">
+            <div class="not">10</div>  
+        </div>
+    </div>
+    <p class="img-msg" style="color:white"><br><br>&#129155;</p>
+    
+    <p class="img-msg">Ve sunumumu şöyle klişe bir parçayla bitirmek istiyorum...</p>
+    <div class="video">
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/PJIVVY8gln8" title="YouTube video player" frameborder="10"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+    <footer>
+        SA
+    </footer>
+
+</body>
+
+
+
+<script>
+    if (dDcument.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage('resize', "*");
+    }
+</script>
+
+<script type="text/javascript">
+
+    audio = new Audio();
+    audio.src = "audio/Arkaplan.mp3";
+    audio.volume = 0.1;
+    audio.loop = true;
+    audio.play();
+</script>
+
+<script>
+    // Geri sayımın başlayacağı tarih ve saat
+    var countDownDate = new Date("May 28, 2023 23:59:59").getTime();
+
+    // Her 1 saniyede bir geri sayımı güncelleme fonksiyonu
+    var countdown = setInterval(function() {
+        // Şu anki tarih ve saat
+        var now = new Date().getTime();
+
+        // Geri sayım için kalan zamanı hesaplama
+        var distance = countDownDate - now;
+
+        // Gün, saat, dakika ve saniye olarak geri sayımı hesaplama
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Geri sayımı HTML elementine yazdırma
+        document.getElementById("countdown").innerHTML = days + " gün, " + hours + " saat, " + minutes + " dakika, " + seconds + " saniye kaldı";
+
+        // Geri sayım tamamlandığında durdurma ve mesaj gösterme
+        if (distance < 0) {
+            clearInterval(countdown);
+            document.getElementById("countdown").innerHTML = "Geri sayım tamamlandı!";
+        }
+    }, 1000); // Her 1 saniyede bir güncelleme yapmak için 1000ms (1 saniye) bekleme süresi
+</script>
+
+
+</html>
