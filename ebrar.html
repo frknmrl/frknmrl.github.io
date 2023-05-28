@@ -543,7 +543,7 @@
 
 <script>
     // Geri sayımın başlayacağı tarih ve saat
-    var countDownDate = new Date("May 28, 2023 23:59:59").getTime();
+    var countDownDate = new Date("May 29, 2023 23:59:59").getTime();
 
     // Her 1 saniyede bir geri sayımı güncelleme fonksiyonu
     var countdown = setInterval(function() {
@@ -560,7 +560,7 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Geri sayımı HTML elementine yazdırma
-        document.getElementById("countdown").innerHTML = "Doğum gününe " + days + " gün, " + hours + " saat, " + minutes + " dakika, kaldı" + seconds + " saniye kaldı";
+        document.getElementById("countdown").innerHTML = "Doğum gününün bitmesine " + days + " gün, " + hours + " saat, " + minutes + " dakika, " + seconds + " saniye kaldı";
 
         // Geri sayım tamamlandığında durdurma ve mesaj gösterme
         if (distance < 0) {
