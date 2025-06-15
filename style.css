@@ -1,0 +1,112 @@
+.description {
+    display: flex;
+    justify-content: center;
+
+}
+
+.description p {
+    color: #fafafa;
+    width: 1000px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.description h2 {
+    color: blueviolet;
+}
+
+.bday {
+    text-align: center;
+    background: linear-gradient(to right,
+            #7953cd 20%,
+            #00affa 30%,
+            #0190cd 70%,
+            #764ada 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 800px;
+}
+
+.img-msg {
+    margin-top: 5rem;
+    color: aqua;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.kutu {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.kutu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s;
+}
+
+.kutu:hover img {
+    opacity: 0.5; /* Resim opaklığı */
+}
+
+.kutu .not {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+}
+
+.kutu:hover .not {
+    opacity: 1; /* Yazı görünürlüğü */
+    transition: opacity 0.3s;
+}
+
+#countdown {
+    font-size: 24px;
+}
+
+
+.video {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 5rem;
+}
+
+.video img {
+    border-radius: 150px;
+}
